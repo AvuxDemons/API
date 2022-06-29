@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API is a cool api with alot of endpoints which you can use!",
+        "version": "1.0.0",
+        "title": "API",
+        "termsOfService": "/terms",
+        "adspolicy": "/ads-policy",
+        "contact": {
+            "email": "Avux@gmail.com",
+            "discord": "Avux#1924"
+        }
+    },
+    "host": "api.ademons.repl.co",
+    "tags": [
+        {
+            "name": "anime",
+            "description": "Anime Is Our World"
+        },
+        {
+            "name": "image",
+            "description": "Maybe your bored"
+        },
+        {
+            "name": "nsfw",
+            "description": "18+ Content"
+        },
+        {
+            "name": "random",
+            "description": "Random Stuff"
+        }
+    ],
+    "paths": {
+        "/anime/angry": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Make the classic minecraft achievment",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/baka": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Make the classic minecraft achievment",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "footer",
+                        "in": "query",
+                        "description": "The footer in the banner",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "name": "header",
+                        "in": "query",
+                        "description": "The header in the banner",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        }
+    }
+}
