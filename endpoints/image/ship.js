@@ -1,0 +1,35 @@
+const client = require('alexflipnote.js');
+const alexclient = new client('0cymSxFtqE9_e0UKc0tpQtLx6SW07M3om19QU9L_');
+
+module.exports = {
+    run: async (req, res, next) => {
+        const avatar1 = req.query.avatar1;
+        const avatar2 = req.query.avatar2;
+
+        if (!req.query.avatar1)
+            return res.json({
+                message: 'Please Provide Avatar 1 Link',
+                usage: 'https://api.avux.ga/image/ship?avatar1=<avatar link>'
+            });
+        if (!req.query.avatar2)
+            return res.json({
+                message: 'Please Provide An Avatar 2 Link',
+                usage: 'https://api.avux.ga/image/ship?avatar1=<avatar link>&avatar2=<avatar link>'
+            });
+        try {
+            let link = await alexclient.image.ship({
+                user: avatar1,
+                user2: avatar2
+            });
+
+            const result = Buffer.from(link, 'base64');
+            res.setHeader('content-type', 'image/jpeg');
+            res.end(result);
+        } catch (err) {
+            res.json({
+                error: err.message,
+                note: 'Image Endpoint Doesnt Support .webp'
+            });
+        }
+    }
+};
