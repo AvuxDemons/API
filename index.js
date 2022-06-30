@@ -24,12 +24,37 @@ app.set('json spaces', 1);
 app.use(express.static('public'));
 app.use(cors());
 
-/* BASE URL */
+/* MAIN URL */
 app.get('/', (req, res, next) => {
-    res.sendFile(__dirname + '/html/home.html')
+    res.sendFile(__dirname + '/public/home.html')
 });
 
 app.get('/stats', app.use(health.ping('/stats')));
+
+/* DOCUMENTATION*/
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUI = require('swagger-ui-express');
+
+const swaggerOptions = {
+	swaggerDefinition: {
+		info: {
+			title: 'API',
+			description: 'API Docs'
+		},
+		servers: [`${config.baseurl}`]
+	},
+	apis: [__dirname + '/routes/*.js']
+
+};
+var options = {
+    explorer: true,
+    validatorUrl : null
+  };
+
+const swaggerDocs = swaggerJsDoc(swaggerOptions);
+const swaggerDocument = require('./docs.json');
+
+app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument, options));
 
 /* ROUTES */
 const animeRoute = require('./routes/Anime');
