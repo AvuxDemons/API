@@ -29,6 +29,8 @@ app.get('/', (req, res, next) => {
     res.sendFile(__dirname + '/html/home.html')
 });
 
+app.get('/stats', app.use(health.ping('/stats')));
+
 /* ROUTES */
 const animeRoute = require('./routes/Anime');
 const imageRoute = require('./routes/Image');
