@@ -46,15 +46,14 @@ app.use('/nsfw', nsfwRoute);
 app.use('/random', randomRoute);
 
 
-/* ERROR HANDLING URL */
+/* ERROR HANDLING */
 app.use(function (req, res, next) {
     res.status(404);
     res.status(429);
     res.json({
         "status": 404,
-        "short": "Not found.",
-        "text": "The route of endpoint that you gave doesn't exist or its wrong.",
-        "success": false
+        "error": "Not found.",
+        "detail": "The route of endpoint that you gave doesn't exist or its wrong.",
     });
 });
 
