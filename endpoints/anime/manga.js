@@ -1,4 +1,4 @@
-const anime = require('@freezegold/anime.js');
+const anime = require('@ytygrunn1ngark456/anime.js');
 const config = require('../../../config/config.json');
 
 module.exports = {

@@ -29,30 +29,6 @@ app.get('/', (req, res, next) => {
     res.sendFile(__dirname + '/html/home.html')
 });
 
-/* DOCS */
-const swaggerJsDoc = require('swagger-jsdoc');
-const swaggerUI = require('swagger-ui-express');
-
-const swaggerOptions = {
-	swaggerDefinition: {
-		info: {
-			title: 'API',
-			description: 'API Docs'
-		},
-		servers: [`${config.baseurl}`]
-	},
-	apis: [__dirname + '/routes/*.js']
-   
-};
-var options = {
-    explorer: true,
-    validatorUrl : null
-  };
-  
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
-const swaggerDocument = require('./docs.json');
-app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument, options));
-
 /* ROUTES */
 const animeRoute = require('./routes/Anime');
 const imageRoute = require('./routes/Image');
@@ -72,7 +48,12 @@ app.use('/random', randomRoute);
 app.use(function (req, res, next) {
     res.status(404);
     res.status(429);
-    res.sendFile(__dirname + '/html/error.html')
+    res.json({
+        "status": 404,
+        "short": "Not found.",
+        "text": "The route of endpoint that you gave doesn't exist or its wrong.",
+        "success": false
+    });
 });
 
 const listener = app.listen(port, () => {
