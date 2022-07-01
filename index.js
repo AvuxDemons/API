@@ -17,7 +17,7 @@ const config = require('./config/config.json');
  */
 
 const app = express();
-const port = 10000;
+const port = 3000;
 const health = require('express-ping');
 
 app.set('json spaces', 1);
