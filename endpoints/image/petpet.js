@@ -1,4 +1,5 @@
 const petPetGif = require('pet-pet-gif');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {

@@ -2,6 +2,7 @@ const isImageURL = require('image-url-validator').default;
 const weather = require('weather-js');
 const Canvas = require('canvas');
 const fillTextWithTwemoji = require('node-canvas-with-twemoji').fillTextWithTwemoji;
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {

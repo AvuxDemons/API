@@ -2,6 +2,7 @@ const {
     VACEFronJS
 } = require('vacefron');
 const vacefron = new VACEFronJS();
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {

@@ -1,6 +1,7 @@
 const Canvas = require('canvas');
 const canvacord = require('canvacord');
 const fillTextWithTwemoji = require('node-canvas-with-twemoji').fillTextWithTwemoji;
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
