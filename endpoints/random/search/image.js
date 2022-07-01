@@ -13,13 +13,12 @@ module.exports = {
         function sendResults(error, results) {
             if (error) {
 
-                res.send({
+                res.json({
                     error: 'An error occured'
                 })
             }
             else {
-
-                res.send(JSON.stringify(results, null, ' '))
+                res.json({result: results[Math.floor(Math.random() * results.length)]})
             }
         }
 
