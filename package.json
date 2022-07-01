@@ -5,7 +5,6 @@
   "main": "index.js",
   "start": "node .",
   "dependencies": {
-    "@k3rn31p4nic/google-translate-api": "^1.1.1",
     "@supercharge/request-ip": "^1.1.2",
     "@top-gg/sdk": "^3.1.1",
     "@ytygrunn1ngark456/anime.js": "0.0.1-beta",
