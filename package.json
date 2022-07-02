@@ -12,7 +12,7 @@
     "alexflipnote.js": "^2.4.1",
     "anigrab": "^1.9.11",
     "app-store-scraper": "^0.16.3",
-    "better-hastebin": "^1.0.0",
+    "better-hastebin": "github:freezegr/hastebin",
     "canvacord": "^5.1.0",
     "canvas": "^2.7.0",
     "captcha-canvas": "^2.3.1",
