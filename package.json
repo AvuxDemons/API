@@ -35,7 +35,6 @@
     "mangadex-full-api": "^5.6.1",
     "nana-api": "^1.1.4",
     "nekobot-api": "^2.1.0",
-    "node-canvas-with-twemoji": "^0.1.6",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.15",
     "npx": "^10.2.2",
