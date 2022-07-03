@@ -1,4 +1,4 @@
-const translate = require('@iamtraction/google-translate-api');
+const translate = require('@iamtraction/google-translate');
 
 module.exports = {
     run: async (req, res, next) => {
