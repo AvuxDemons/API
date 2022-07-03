@@ -1,18 +1,19 @@
 const malScraper = require('mal-scraper');
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.search)
-            return res.send({
+        const { search } = req.query;
+
+        if (!search)
+            return res.json({
                 result: 'Please Provide The Anime Title You Wanna Search For!',
                 usage: `${config.baseurl}/anime/search/anime?search=bunny girl senpai`
             });
 
-        malScraper.getInfoFromName(req.query.search).then(data => {
-            res.statusCode = 200;
-            res.json({
-                result: data
+        malScraper.getInfoFromName(req.query.search).then(result => {
+            res.status(200).json({
+                result
             });
         })
     }

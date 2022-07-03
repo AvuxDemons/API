@@ -1,9 +1,11 @@
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.search)
-            return res.send({
+        const { search } = req.query;
+
+        if (!search)
+            return res.json({
                 result: 'Please Provide The Title You Wanna Search For!',
                 usage: `${config.baseurl}/anime/search/mangadex?search=bunny girl senpai`
             });
@@ -11,11 +13,10 @@ module.exports = {
 
         MFA.login('apiavuxga', 'avuxga123').then(async () => {
             const result = await MFA.Manga.search({
-                title: req.query.search,
+                title: search,
                 limit: Infinity
             });
-            res.statusCode = 200;
-            res.json({
+            res.status(200).json({
                 result
             });
         })
