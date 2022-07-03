@@ -1,6 +1,6 @@
 const client = require('alexflipnote.js');
 const alexclient = new client(config.alexclient);
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {

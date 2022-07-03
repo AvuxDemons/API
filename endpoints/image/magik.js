@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
   run: async (req, res, next) => {

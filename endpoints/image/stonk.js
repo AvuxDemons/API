@@ -1,5 +1,5 @@
 const DIG = require('discord-image-generation');
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
