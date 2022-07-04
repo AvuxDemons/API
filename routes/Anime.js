@@ -10,7 +10,7 @@ const router = express.Router();
 
 */
 
-const endpoint = require('../src/-anime.json');
+const endpoint = require('../endpoints/anime/anime.json');
 
 endpoint.forEach(img => {
     router.get('/' + img, async (req, res) => {
