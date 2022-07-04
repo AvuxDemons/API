@@ -3,8 +3,8 @@ const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        const avatar = req.query.avatar;
-        if (!req.query.avatar)
+        var { avatar } = req.query;
+        if (!avatar)
             return res.json({
                 message: 'Please Provide An Avatar Link',
                 usage: 'https://api.avux.ga/image/triggered?avatar=<avatar link>'

@@ -3,7 +3,7 @@ const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        const { search, source } = req.query;
+        var { search, source } = req.query;
 
         if (!source)
             return res.json({

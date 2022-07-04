@@ -3,7 +3,7 @@ const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        const avatar = req.query.avatar;
+        var { avatar } = req.query;
         if (!req.query.avatar)
             return res.json({
                 message: 'Please Provide An Avatar Link',

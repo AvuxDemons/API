@@ -4,15 +4,14 @@ const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        const avatar1 = req.query.avatar1;
-        const avatar2 = req.query.avatar2;
+        var { avatar1, avatar2 } = req.query;
 
-        if (!req.query.avatar1)
+        if (!avatar1)
             return res.json({
                 message: 'Please Provide Avatar 1 Link',
                 usage: 'https://api.avux.ga/image/ship?avatar1=<avatar link>'
             });
-        if (!req.query.avatar2)
+        if (!avatar2)
             return res.json({
                 message: 'Please Provide An Avatar 2 Link',
                 usage: 'https://api.avux.ga/image/ship?avatar1=<avatar link>&avatar2=<avatar link>'
