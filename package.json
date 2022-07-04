@@ -36,8 +36,6 @@
     "nana-api": "^1.1.4",
     "nekobot-api": "^2.1.0",
     "node-fetch": "^2.6.1",
-    "nodemon": "^2.0.15",
-    "npx": "^10.2.2",
     "pet-pet-gif": "^1.0.9",
     "random-memes": "^3.1.0",
     "random-stuff-api": "^10.0.0",
