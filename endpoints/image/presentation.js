@@ -7,11 +7,10 @@ module.exports = {
         if (!text)
             return res.json({
                 message: 'Please Provide Text Max 300 Char',
-                usage: 'https://api.avux.ga/image/presentation?text=<your text>'
+                usage: `${config.baseur}/image/presentation?text=<your text>`
             });
 
         let img = await new DIG.LisaPresentation().getImage(text);
-        res.setHeader('content-type', 'image/jpeg');
-        res.end(img);
+        res.setHeader('content-type', 'image/jpeg').end(img);
     }
 };

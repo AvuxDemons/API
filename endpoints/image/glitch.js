@@ -3,16 +3,16 @@ const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
+        var { avatar } = req.query;
         const url = `https://api.devs-hub.xyz/glitch?image=`;
-        if (!req.query.avatar)
+        if (!avatar)
             return res.json({
                 message: 'Please Provide Avatar Link',
-                usage: 'https://api.avux.ga/image/glitch?avatar=<avatar_link>'
+                usage: `${config.baseurl}/image/glitch?avatar=<avatar_link>`
             });
-        const response = await fetch(url + req.query.avatar);
+        const response = await fetch(url + avatar);
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
-        res.setHeader('content-type', 'image/jpeg');
-        res.end(buffer);
+        res.setHeader('content-type', 'image/jpeg').end(buffer);
     }
 };

@@ -7,11 +7,10 @@
         "termsOfService": "/terms",
         "adspolicy": "/ads-policy",
         "contact": {
-            "email": "Avux@gmail.com",
-            "discord": "Avux#1924"
+            "email": ""
         }
     },
-    "host": "api.ademons.repl.co",
+    "host": "api.avux.xyz",
     "tags": [
         {
             "name": "anime",

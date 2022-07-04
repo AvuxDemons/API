@@ -26,8 +26,7 @@ module.exports = {
                 result: searchResults[0]
             });
         } catch (err) {
-            res.statusCode = 404;
-            res.json({
+            res.status(404).json({
                 error: err.message
             });
         }

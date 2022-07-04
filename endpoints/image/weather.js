@@ -23,7 +23,7 @@ module.exports = {
   */
         if (!location) return res.json({
             message: 'Please Provide a Valid Location',
-            usage: 'https://api.avux.ga/image/weather?location=<your location>&background=<image url (optional)>'
+            usage: `${config.baseur}/image/weather?location=<your location>&background=<image url (optional)>`
         });
         weather.find({
             search: location,
@@ -31,11 +31,11 @@ module.exports = {
         }, async (err, stats) => {
             if (!stats) return res.json({
                 message: 'Invalid Location , Please Provide a Valid Location',
-                usage: 'https://api.avux.ga/image/weather?location=<your location>&background=<image url (optional)>'
+                usage: `${config.baseur}/image/weather?location=<your location>&background=<image url (optional)>`
             });
             if (!stats[0]) return res.json({
                 message: 'Invalid Location , Please Provide a Valid Location',
-                usage: 'https://api.avux.ga/image/weather?location=<your location>&background=<image url (optional)>'
+                usage: `${config.baseur}/image/weather?location=<your location>&background=<image url (optional)>`
             });
             stats = stats[0];
             stats.current['temperature_f'] = Math.round(

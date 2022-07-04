@@ -15,7 +15,7 @@ module.exports = {
         var {
             text
         } = req.query;
-        if (!text) text = 'Hello | https://api.avux.ga';
+        if (!text) text = `Hello | ${config.baseurl}`;
         const canvas = Canvas.createCanvas(794, 82);
         const ctx = canvas.getContext('2d');
         const img = new Canvas.Image(),

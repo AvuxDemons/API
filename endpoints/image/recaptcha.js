@@ -8,14 +8,13 @@ module.exports = {
         if (!text)
             return res.json({
                 message: 'Please Provide Captcha Text',
-                usage: 'https://api.avux.ga/image/recaptcha?text=<text>'
+                usage: `${config.baseur}/image/recaptcha?text=<text>`
             });
 
         let link = await alexclient.image.captcha({
             text: text
         });
         const result = Buffer.from(link, 'base64');
-        res.setHeader('content-type', 'image/jpeg');
-        res.end(result);
+        res.setHeader('content-type', 'image/jpeg').end(result);
     }
 };

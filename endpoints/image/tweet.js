@@ -9,27 +9,26 @@ module.exports = {
         if (!username)
             return res.json({
                 message: 'Please Provide Username',
-                usage: 'https://api.avux.ga/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>'
+                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
         if (!displayname)
             return res.json({
                 message: 'Please Provide Display Name',
-                usage: 'https://api.avux.ga/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>'
+                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
         if (!avatar)
             return res.json({
                 message: 'Please Provide Avatar Link',
-                usage: 'https://api.avux.ga/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>'
+                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
         if (!comment)
             return res.json({
                 message: 'Please Provide a Comment',
-                usage: 'https://api.avux.ga/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>'
+                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
         const response = await fetch(url + username + '&displayname=' + displayname + '&avatar=' + avatar + '&comment=' + comment);
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
-        res.setHeader('content-type', 'image/jpeg');
-        res.end(buffer);
+        res.setHeader('content-type', 'image/jpeg').end(buffer);
     }
 };

@@ -10,7 +10,7 @@ module.exports = {
         if (!avatar)
             return res.json({
                 message: 'Please Provide Avatar Link',
-                usage: 'https://api.avux.ga/image/pray?avatar=<avatar_link>'
+                usage: `${config.baseur}/image/pray?avatar=<avatar_link>`
             });
 
         if (webp.status === 400)
@@ -22,7 +22,6 @@ module.exports = {
             const response = await fetch(url + avatar);
             const arrayBuffer = await response.arrayBuffer();
             const buffer = Buffer.from(arrayBuffer);
-            res.setHeader('content-type', 'image/jpeg');
-            res.end(buffer);
+            res.setHeader('content-type', 'image/jpeg').end(buffer);
     }
 };
