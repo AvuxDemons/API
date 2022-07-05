@@ -9,8 +9,7 @@ const router = express.Router();
  |___|_|  |_/_/   \_\____|_____| cat:image
  */
 
-const image = '../endpoints/image/';
-const images = require('./anime.json');
+const images = require('./image.json');
 
 images.forEach(end => {
     router.get('/' + end, async (req, res) => {
