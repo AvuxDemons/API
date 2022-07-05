@@ -15,8 +15,7 @@ const endpoint = require('../endpoints/anime/anime.json');
 endpoint.forEach(img => {
     router.get('/' + img, async (req, res) => {
         const image = require(`../src/${img}`);
-        res.statusCode = 200;
-        res.json({
+        res.status(200).json({
             result: image[Math.floor(Math.random() * image.length)],
             total_image: image.length
         });
@@ -30,36 +29,13 @@ endpoint.forEach(img => {
  |___/___/_/ \_\_|_\\___|_||_| cat:animesearch
 */
 
-const src = '../endpoints/anime/';
+const search = ['anime', 'mangadex', 'manga', 'stream', 'wallpaper/desktop', 'wallpaper/mobile'];
 
-router.get('/search/anime', (req, res, next) => {
-    const endpoint = require(`${src}anime`);
-    endpoint.run(req, res)
-});
-
-router.get('/search/mangadex', (req, res, next) => {
-    const endpoint = require(`${src}mangadex`);
-    endpoint.run(req, res)
-});
-
-router.get('/search/manga', (req, res, next) => {
-    const endpoint = require(`${src}manga`);
-    endpoint.run(req, res)
-});
-
-router.get('/search/stream', (req, res, next) => {
-    const endpoint = require(`${src}stream`);
-    endpoint.run(req, res)
-});
-
-router.get('/search/wallpaper/desktop', (req, res, next) => {
-    const endpoint = require(`${src}wallpaper`);
-    endpoint.run(req, res)
-});
-
-router.get('/search/wallpaper/mobile', (req, res, next) => {
-    const endpoint = require(`${src}mobile`);
-    endpoint.run(req, res)
+search.forEach(end => {
+    router.get('/search/' + end, async (req, res) => {
+        const endpoint = require(`../endpoints/anime/${end}`);
+        endpoint.run(req, res)
+    });
 });
 
 module.exports = router;
