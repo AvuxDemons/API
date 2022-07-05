@@ -17,131 +17,13 @@ const router = express.Router();
  
 */
 
-const hentai = '../endpoints/nsfw/hentai/'
+const hentai = ['ahegao', 'anal', 'ass', 'blowjob', 'creampie', 'cum', 'ero', 'femdom', 'foot', 'gangbang', 'gif', 'hentai', 'incest', 'kitsune', 'masturbation', 'neko', 'oppai', 'paizuri', 'pantsu', 'public', 'pussy', 'tentacles', 'thigh', 'yuri'];
 
-router.get('/hentai/ahegao', (req, res, next) => {
-    const endpoint = require(`${hentai}ahegao`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/anal', (req, res, next) => {
-    const endpoint = require(`${hentai}anal`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/ass', (req, res, next) => {
-    const endpoint = require(`${hentai}ass`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/blowjob', (req, res, next) => {
-    const endpoint = require(`${hentai}blowjob`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/creampie', (req, res, next) => {
-    const endpoint = require(`${hentai}creampie`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/cum', (req, res, next) => {
-    const endpoint = require(`${hentai}cum`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/ero', (req, res, next) => {
-    const endpoint = require(`${hentai}ero`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/femdom', (req, res, next) => {
-    const endpoint = require(`${hentai}femdom`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/foot', (req, res, next) => {
-    const endpoint = require(`${hentai}foot`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/gangbang', (req, res, next) => {
-    const endpoint = require(`${hentai}gangbang`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/gif', (req, res, next) => {
-    const endpoint = require(`${hentai}gif`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/hentai', (req, res, next) => {
-    const endpoint = require(`${hentai}hentai`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/incest', (req, res, next) => {
-    const endpoint = require(`${hentai}incest`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/kitsune', (req, res, next) => {
-    const endpoint = require(`${hentai}kitsune`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/masturbation', (req, res, next) => {
-    const endpoint = require(`${hentai}masturbation`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/midriff', (req, res, next) => {
-    const endpoint = require(`${hentai}midriff`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/neko', (req, res, next) => {
-    const endpoint = require(`${hentai}neko`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/oppai', (req, res, next) => {
-    const endpoint = require(`${hentai}oppai`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/paizuri', (req, res, next) => {
-    const endpoint = require(`${hentai}paizuri`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/pantsu', (req, res, next) => {
-    const endpoint = require(`${hentai}pantsu`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/public', (req, res, next) => {
-    const endpoint = require(`${hentai}public`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/pussy', (req, res, next) => {
-    const endpoint = require(`${hentai}pussy`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/tentacles', (req, res, next) => {
-    const endpoint = require(`${hentai}tentacles`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/thigh', (req, res, next) => {
-    const endpoint = require(`${hentai}thigh`);
-    endpoint.run(req, res)
-});
-
-router.get('/hentai/yuri', (req, res, next) => {
-    const endpoint = require(`${hentai}yuri`);
-    endpoint.run(req, res)
+hentai.forEach(end => {
+    router.get('/hentai/' + end, async (req, res) => {
+        const endpoint = require(`../endpoints/nsfw/hentai/${end}`);
+        endpoint.run(req, res)
+    });
 });
 
 /*

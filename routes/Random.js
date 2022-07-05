@@ -45,7 +45,7 @@ endpoint.forEach(img => {
     });
 });
 
-const fun = ['8ball', 'ascii','chatbot', 'coffee', 'face', 'insult', 'meme', 'minesweeper', 'owoify', 'pickuplines', 'ppsize', 'reverse', 'simsimi'];
+const fun = ['8ball', 'ascii', 'chatbot', 'coffee', 'meme', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'];
 
 fun.forEach(end => {
     router.get('/search/' + end, async (req, res) => {
@@ -94,7 +94,7 @@ search.forEach(end => {
    | || (_) | (_) | |__\__ \
    |_| \___/ \___/|____|___/ cat:tools
 
-*/ 
+*/
 
 const tools = ['apikey', 'avatar', 'base64', 'binary', 'fakemail', 'hastebin', 'imgur', 'ip', 'nameserver', 'password', 'progress', 'shortener', 'time', 'translate', 'username', 'uuid'];
 
