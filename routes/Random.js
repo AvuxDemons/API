@@ -27,11 +27,6 @@ router.get('/discord/rankcard', (req, res, next) => {
     endpoint.run(req, res)
 });
 
-router.get('/discord/rankcard', (req, res, next) => {
-    const endpoint = require(`${discord}rankcard`);
-    endpoint.run(req, res)
-});
-
 router.get('/discord/user', (req, res, next) => {
     const endpoint = require(`${discord}user`);
     endpoint.run(req, res)
@@ -57,6 +52,19 @@ router.get('/discord/welcomer', (req, res, next) => {
 
 const fun = '../endpoints/random/fun/'
 
+const endpoint = ['cat', 'dog', 'sadcat'];
+
+endpoint.forEach(img => {
+    router.get('/fun/' + img, async (req, res) => {
+        const image = require(`../src/${img}`);
+        res.statusCode = 200;
+        res.json({
+            result: image[Math.floor(Math.random() * image.length)],
+            total_image: image.length
+        });
+    });
+});
+
 router.get('/fun/8ball', (req, res, next) => {
     const endpoint = require(`${fun}8ball`);
     endpoint.run(req, res)
@@ -67,11 +75,6 @@ router.get('/fun/ascii', (req, res, next) => {
     endpoint.run(req, res)
 });
 
-router.get('/fun/cat', (req, res, next) => {
-    const endpoint = require(`${fun}cat`);
-    endpoint.run(req, res)
-});
-
 router.get('/fun/chatbot', (req, res, next) => {
     const endpoint = require(`${fun}chatbot`);
     endpoint.run(req, res)
@@ -79,11 +82,6 @@ router.get('/fun/chatbot', (req, res, next) => {
 
 router.get('/fun/coffee', (req, res, next) => {
     const endpoint = require(`${fun}coffee`);
-    endpoint.run(req, res)
-});
-
-router.get('/fun/dog', (req, res, next) => {
-    const endpoint = require(`${fun}dog`);
     endpoint.run(req, res)
 });
 
@@ -124,11 +122,6 @@ router.get('/fun/ppsize', (req, res, next) => {
 
 router.get('/fun/reverse', (req, res, next) => {
     const endpoint = require(`${fun}reverse`);
-    endpoint.run(req, res)
-});
-
-router.get('/fun/sadcat', (req, res, next) => {
-    const endpoint = require(`${fun}sadcat`);
     endpoint.run(req, res)
 });
 
