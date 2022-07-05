@@ -17,7 +17,7 @@ endpoint.forEach(img => {
         const image = require(`../src/${img}`);
         res.status(200).json({
             result: image[Math.floor(Math.random() * image.length)],
-            total_image: image.length
+            total_src: image.length
         });
     });
 });

@@ -33,14 +33,14 @@ discord.forEach(end => {
 
  */
 
-const endpoint = ['cat', 'dog', 'insult', 'sadcat'];
+const endpoint = ['cat', 'dog', 'face', 'insult', 'pickuplines', 'sadcat'];
 
 endpoint.forEach(img => {
     router.get('/fun/' + img, async (req, res) => {
         const image = require(`../src/${img}`);
         res.status(200).json({
             result: image[Math.floor(Math.random() * image.length)],
-            total_image: image.length
+            total_src: image.length
         });
     });
 });
