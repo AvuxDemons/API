@@ -1,4 +1,3 @@
-const HMfull = require('hmfull');
 const config = require('../../config/config.json');
 
 module.exports = {
