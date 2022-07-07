@@ -4,10 +4,10 @@ const config = require('../../config/config.json');
 module.exports = {
     run: async (req, res, next) => {
         var { avatar } = req.query;
-        const url = `https://apiv2.willz.repl.co/image/mexico?image=`;
+        const url = `https://api.miduwu.ga/image/mexico?image=`;
         if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/mexico?avatar=<avatar>`
             });
         const response = await fetch(url + avatar, {

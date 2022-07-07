@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const config = require('../../../config/config.json');
+const config = require('../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
@@ -8,8 +8,8 @@ module.exports = {
         const webp = await fetch(url + avatar);
 
         if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/pray?avatar=<avatar_link>`
             });
 

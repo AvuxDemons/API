@@ -8,8 +8,8 @@ module.exports = {
     run: async (req, res, next) => {
         var { text } = req.query;
         if (!text)
-            return res.json({
-                message: 'Please Provide An Text',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/meeting?text=<text>&key=<your key>`
             });
 

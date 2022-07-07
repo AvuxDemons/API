@@ -6,8 +6,8 @@ module.exports = {
         var { avatar } = req.query;
         
         if (!avatar)
-            return res.json({
-                message: 'Please Provide An Avatar Link',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/notstonk?avatar=<avatar link>`
             });
         try {

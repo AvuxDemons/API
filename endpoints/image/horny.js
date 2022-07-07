@@ -6,8 +6,8 @@ module.exports = {
         var { avatar } = req.query;
         const url = `https://some-random-api.ml/canvas/horny?avatar=`;
         if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseurl}/image/horny?avatar=<url_link>`
             });
 

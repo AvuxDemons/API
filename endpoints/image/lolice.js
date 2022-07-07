@@ -6,8 +6,8 @@ module.exports = {
         var { avatar } = req.query;
         const url = `https://some-random-api.ml/canvas/lolice?avatar=`;
         if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/lolice?avatar=<avatar_link>`
             });
         const response = await fetch(url + avatar);

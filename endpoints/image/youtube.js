@@ -6,19 +6,9 @@ module.exports = {
         var { username, avatar, comment } = req.query;
         const url = `https://some-random-api.ml/canvas/youtube-comment?username=`;
 
-        if (!username)
+        if (!username || !avatar || !comment)
             return res.json({
-                message: 'Please Provide Username',
-                usage: `${config.baseur}/image/youtube?username=<username>&avatar=<avatar_link>&comment=<comment>`
-            });
-        if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
-                usage: `${config.baseur}/image/youtube?username=<username>&avatar=<avatar_link>&comment=<comment>`
-            });
-        if (!comment)
-            return res.json({
-                message: 'Please Provide a Comment',
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/youtube?username=<username>&avatar=<avatar_link>&comment=<comment>`
             });
         const response = await fetch(url + username + '&avatar=' + avatar + '&comment=' + comment);

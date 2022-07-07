@@ -4,15 +4,10 @@ const config = require('../../config/config.json');
 module.exports = {
     run: async (req, res, next) => {
         var { avatar1, avatar2 } = req.query;
-        if (!avatar1)
+        if (!avatar1 || !avatar2)
             return res.json({
-                message: 'Please Provide Avatar 1 Link',
-                usage: `${config.baseurl}/image/doublestonk?avatar=<avatar link>`
-            });
-        if (!avatar2)
-            return res.json({
-                message: 'Please Provide Avatar 2 Link',
-                usage: `${config.baseurl}/image/doublestonk?avata1r=<avatar link>&avatar2=<avatar ink>`
+                result: 'Invalid Query Parameter',
+                usage: `${config.baseurl}/image/doublestonk?avatar1=<avatar link>&avatar2=<avatar ink>`
             });
         try {
             let img = await new DIG.DoubleStonk().getImage(avatar1, avatar2);

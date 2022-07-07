@@ -4,14 +4,9 @@ module.exports = {
     run: async (req, res, next) => {
         var { search, source } = req.query;
 
-        if (!source)
-            return res.json({
-                result: 'Please Provide The Anime Source That You Wanna Search For!',
-                usage: `${config.baseurl}/anime/search/stream?source=<4anime|animeflix|animefreak|animekisa|animeidhentai|animeout|animepahe|animerush|gogoanime|hentaihaven|ryuanime|twist>&search=<anime name>`
-            });
-        if (!search)
-            return res.json({
-                result: 'Please Provide The Anime Title That You Wanna Search For!',
+        if (!source || !search)
+            return res.status(400).json({
+                result: 'Invaid Query Parameters!',
                 usage: `${config.baseurl}/anime/search/stream?source=<4anime|animeflix|animefreak|animekisa|animeidhentai|animeout|animepahe|animerush|gogoanime|hentaihaven|ryuanime|twist>&search=<anime name>`
             });
         try {

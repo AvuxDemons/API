@@ -5,14 +5,9 @@ module.exports = {
     run: async (req, res, next) => {
         var { avatar1, avatar2 } = req.query;
 
-        if (!avatar1)
-            return res.json({
-                message: 'Please Provide Avatar 1 Link',
-                usage: `${config.baseur}/image/spank?avatar1=<avatar link`
-            });
-        if (!avatar2)
-            return res.json({
-                message: 'Please Provide An Avatar 2 Link',
+        if (!avatar1 || !avatar2)
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/spank?avata1r=<avatar link>&avatar2=<avatar link>`
             });
         try {

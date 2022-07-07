@@ -6,8 +6,8 @@ module.exports = {
     run: async (req, res, next) => {
         var { text } = req.query;
         if (!text)
-            return res.json({
-                message: 'Please Provide Supreme Text',
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/supreme?text=<your text>`
             });
 

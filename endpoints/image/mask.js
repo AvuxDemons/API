@@ -4,13 +4,13 @@ const config = require('../../config/config.json');
 module.exports = {
     run: async (req, res, next) => {
         var { avatar } = req.query;
-        const url = `https://api.devs-hub.xyz/simp?image=`;
+        const url = `https://api.weky.xyz/canvas/mask?image=`;
         const webp = await fetch(url + avatar);
 
         if (!avatar)
             return res.status(400).json({
                 result: 'Invalid Query Parameter',
-                usage: `${config.baseur}/image/pray?avatar=<avatar_link>`
+                usage: `${config.baseur}/image/mask?avatar=<avatar_link>`
             });
 
         if (webp.status === 400)

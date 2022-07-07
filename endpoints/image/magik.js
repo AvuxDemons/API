@@ -6,11 +6,11 @@ module.exports = {
     var { avatar } = req.query;
     if (!avatar)
       return res.json({
-        message: "Please Provide Avatar Link",
+        result: 'Invalid Query Parameter',
         usage: `${config.baseur}/image/magik?avatar=<avatar>&intensity=<1-10 (Optional)>`
       });
 
-    const url = `https://apiv2.willz.repl.co/image/magik?image=`;
+    const url = `https://api.miduwu.ga/image/magik?image=`;
     const intensity = `&intensity=10`;
     const intensitycustom = `&intensity=`;
 

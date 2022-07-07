@@ -27,6 +27,7 @@ app.get('/', (req, res, next) => {
 });
 
 app.get('/stats', app.use(health.ping('/stats')));
+
 /* DOCUMENTATION*/
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');

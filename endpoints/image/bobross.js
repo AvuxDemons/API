@@ -6,7 +6,7 @@ module.exports = {
         var { avatar } = req.query;
         if (!avatar)
             return res.json({
-                message: 'Please Provide An Avatar Link',
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseurl}/image/bobross?avatar=<avatar link>`
             });
         try {

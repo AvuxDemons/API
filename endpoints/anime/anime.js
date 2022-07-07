@@ -6,7 +6,7 @@ module.exports = {
         var { search } = req.query;
 
         if (!search)
-            return res.json({
+            return res.status(200).json({
                 result: 'Please Provide The Anime Title You Wanna Search For!',
                 usage: `${config.baseurl}/anime/search/anime?search=bunny girl senpai`
             });

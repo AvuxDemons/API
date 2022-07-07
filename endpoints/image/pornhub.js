@@ -5,14 +5,9 @@ const config = require('../../config/config.json');
 module.exports = {
     run: async (req, res, next) => {
         var { text1, text2 } = req.query;
-        if (!text1)
-            return res.json({
-                message: 'Please Provide Porn Text',
-                usage: `${config.baseur}/image/pornhub?text1=<text>`
-            });
-        if (!text2)
-            return res.json({
-                message: 'Please Provide Hub Text',
+        if (!text1 || !text2)
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/pornhub?text1=<text>&text2=<text>`
             });
 

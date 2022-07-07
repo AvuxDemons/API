@@ -5,25 +5,9 @@ module.exports = {
     run: async (req, res, next) => {
         var { username, displayname, avatar, comment } = req.query;
         const url = `https://some-random-api.ml/canvas/tweet?username=`;
-
-        if (!username)
+        if (!username || !displayname || !avatar || !comment)
             return res.json({
-                message: 'Please Provide Username',
-                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
-            });
-        if (!displayname)
-            return res.json({
-                message: 'Please Provide Display Name',
-                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
-            });
-        if (!avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
-                usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
-            });
-        if (!comment)
-            return res.json({
-                message: 'Please Provide a Comment',
+                result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
         const response = await fetch(url + username + '&displayname=' + displayname + '&avatar=' + avatar + '&comment=' + comment);

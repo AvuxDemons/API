@@ -8,7 +8,7 @@ module.exports = {
     run: async (req, res, next) => {
         var { name, impostor, color } = req.query;
         if (!name)
-            return res.json({
+            return res.status(400).json({
                 message: 'Please Provide A Name',
                 usage: `${config.baseurl}/image/ejected?name=<name>&impostor=<true/false(optional)>&color=<black|blue|brown|cyan|darkgreen|lime|orange|pink|purple|red|white|yellow (optional)>`
             });

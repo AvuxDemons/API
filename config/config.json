@@ -1,5 +1,7 @@
 {
     "port": "1000",
     "baseurl": "https://api.avux.xyz",
+    "mangadexusername": "apiavuxga",
+    "mangadexpass": "avuxga123",
     "alexclient": "0cymSxFtqE9_e0UKc0tpQtLx6SW07M3om19QU9L_"
 }
