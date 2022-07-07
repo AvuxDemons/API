@@ -1,18 +1,19 @@
 const store = require('app-store-scraper');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.app)
+        let { app } = req.query;
+        if (!app)
             return res.json({
-                message: 'Please Provide App Name',
-                usage: 'https://api.avux.ga/random/info/appstore?app=<name>&key=<your key>'
+                result: 'Please Provide App Name',
+                usage: `${config.baseurl}/random/info/appstore?app=<name>&key=<your key>`
             });
         store.search({
-            term: req.query.app,
+            term: app,
             num: 1
         }).then(result => {
-            res.statusCode = 200;
-            res.json({
+            res.status(200).json({
                 result: result[0]
             });
         });

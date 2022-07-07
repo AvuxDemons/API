@@ -1,20 +1,21 @@
 const TikTokScraper = require('tiktok-scraper');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.username)
+        let { username } = req.query;
+        if (!username)
             return res.json({
-                message: 'Please Provide a Tiktok Username',
-                usage: 'https://api.avux.ga/random/info/tiktok?username=<your username>'
+                result: 'Please Provide a Tiktok Username',
+                usage: `${config.baseurl}/random/info/tiktok?username=<your username>`
             });
 
         (async () => {
             try {
                 const posts = await TikTokScraper.getUserProfileInfo(
-                    req.query.username
+                    username
                 );
-                res.statusCode = 200;
-                res.json(posts);
+                res.status(200).json(posts);
             } catch (error) {
                 console.log(error);
             }

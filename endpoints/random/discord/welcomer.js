@@ -1,51 +1,33 @@
 const canvas = require('canvacord');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.avatar)
-            return res.json({
-                message: 'Please Provide Avatar Link',
-                usage: 'https://api.avux.ga/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>'
-            });
-        if (!req.query.username)
-            return res.json({
-                message: 'Please Provide Username',
-                usage: 'https://api.avux.ga/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>'
-            });
-        if (!req.query.discrim)
-            return res.json({
-                message: 'Please Provide Discriminator',
-                usage: 'https://api.avux.ga/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>'
-            });
-        if (!req.query.title)
-            return res.json({
-                message: 'Please Provide Username',
-                usage: 'https://api.avux.ga/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>'
-            });
-        if (!req.query.message)
-            return res.json({
-                message: 'Please Provide Username',
-                usage: 'https://api.avux.ga/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>'
+        let { avatar, username, discrim, title, message } = req.query;
+        if (!avatar || !username || !discrim || !title || !message)
+            return res.status(400).json({
+                result: 'Invalid Query Parameter',
+                usage: `${config.baseurl}/random/discord/welcomer?avatar=<link>&username=<username>&discrim=<discriminator>&title=<title>&message=<message>&background=<link(optional)>`
             });
 
         const welcome = new canvas.Welcomer()
-            .setText('title', req.query.title)
+            .setText('title', title)
             .setColor('title', '#ffffff')
             .setColor('title-border', '#ffffff00')
 
-            .setAvatar(req.query.avatar)
+            .setAvatar(avatar)
             .setColor('avatar', '#ffffff')
 
-            .setUsername(req.query.username)
+            .setUsername(username)
             .setColor('username', '#ffffff')
             .setColor('username-box', '#ffffff00')
 
-            .setDiscriminator(req.query.discrim)
+            .setDiscriminator(discrim)
             .setColor('hashtag', '#ffffff')
             .setColor('discriminator', '#ffffff')
             .setColor('discriminator-box', '#ffffff00')
 
-            .setText('message', req.query.message)
+            .setText('message', message)
             .setColor('message', '#ffffff')
             .setColor('message-box', '#ffffff00')
 
@@ -55,29 +37,29 @@ module.exports = {
             .setColor('border', '#333333')
             .setOpacity('border', 1);
 
-        if (req.query.background) {
-            welcome.setBackground(req.query.background);
+        if (background) {
+            welcome.setBackground(background);
             welcome.setOpacity('border', 0);
         }
 
-        if (req.query.color) {
-            welcome.setColor('avatar', '#' + req.query.color);
-            welcome.setColor('title', '#' + req.query.color);
-            welcome.setColor('username', '#' + req.query.color);
-            welcome.setColor('hashtag', '#' + req.query.color);
-            welcome.setColor('discriminator', '#' + req.query.color);
-            welcome.setColor('message', '#' + req.query.color);
+        if (color) {
+            welcome.setColor('avatar', '#' + color);
+            welcome.setColor('title', '#' + color);
+            welcome.setColor('username', '#' + color);
+            welcome.setColor('hashtag', '#' + color);
+            welcome.setColor('discriminator', '#' + color);
+            welcome.setColor('message', '#' + color);
         }
 
-        if (req.query.border) {
-            welcome.setColor('title-border', '#' + req.query.border);
-            welcome.setColor('username-box', '#' + req.query.border);
-            welcome.setColor('discriminator-box', '#' + req.query.border);
-            welcome.setColor('message-box', '#' + req.query.border);
+        if (border) {
+            welcome.setColor('title-border', '#' + border);
+            welcome.setColor('username-box', '#' + border);
+            welcome.setColor('discriminator-box', '#' + border);
+            welcome.setColor('message-box', '#' + border);
         }
 
-        // if (req.query.rank) {
-        // welcome.setRank(parseInt(req.query.rank))
+        // if (rank) {
+        // welcome.setRank(parseInt(rank))
         // }
 
         welcome.build().then(data => {

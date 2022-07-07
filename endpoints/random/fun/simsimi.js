@@ -1,18 +1,20 @@
 const fetch = require('node-fetch');
 const replaceString = require('replace-string');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.message)
+        let { message, language } = req.query;
+        if (!message)
             return res.json({
                 result: 'Please Provide  A Message',
-                usage: 'https://api.avux.ga/random/fun/simsimi?message=<message>&language=<language (optional)>'
+                usage: `${config.baseurl}/random/fun/simsimi?message=<message>&language=<language (optional)>`
             });
 
-        if (req.query.message) {
-            if (!req.query.language) {
+        if (message) {
+            if (!language) {
                 fetch(
-                    `https://api.simsimi.net/v2/?text=${req.query.message}&lc=en&cf=false&key=API-TEST-WEB`
+                    `https://api.simsimi.net/v2/?text=${message}&lc=en&cf=false&key=API-TEST-WEB`
                 )
                     .then(res => {
                         return res.json();
@@ -28,14 +30,14 @@ module.exports = {
                         const hasil = JSON.parse(tiga);
                         res.statusCode = 200;
                         res.json({
-                            question: req.query.message,
+                            question: message,
                             result: hasil.success,
                             language: hasil.location,
                         });
                     });
             } else {
                 fetch(
-                    `https://api.simsimi.net/v2/?text=${req.query.message}&lc=${req.query.language}&cf=false&key=API-TEST-WEB`
+                    `https://api.simsimi.net/v2/?text=${message}&lc=${language}&cf=false&key=API-TEST-WEB`
                 )
                     .then(res => {
                         return res.json();
@@ -51,7 +53,7 @@ module.exports = {
                         const hasil = JSON.parse(tiga);
                         res.statusCode = 200;
                         res.json({
-                            question: req.query.message,
+                            question: message,
                             result: hasil.success,
                             language: hasil.location,
                         });

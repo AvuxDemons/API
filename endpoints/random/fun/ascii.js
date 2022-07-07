@@ -1,17 +1,19 @@
 const fetch = require('node-fetch');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.text)
-            return res.json({
-                message: 'Please Provide a Text',
-                usage: 'https://api.avux.ga/ascii?text=<your_text>'
+        let { text } = req.query;
+        if (!text)
+            return res.status(400).json({
+                result: 'Please Provide a Text',
+                usage: `${config.baseurl}/ascii?text=<your_text>`
             });
-        fetch(`https://artii.herokuapp.com/make?text=${req.query.text}`)
+        fetch(`https://artii.herokuapp.com/make?text=${text}`)
             .then(res => res.text())
             .then(body =>
-                res.json({
-                    text: req.query.text,
+                res.status(200).json({
+                    text: text,
                     result: `${body}`
                 })
             );

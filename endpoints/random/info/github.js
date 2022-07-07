@@ -1,22 +1,23 @@
 const fetch = require('node-fetch');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.username)
-            return res.json({
-                message: 'Please Provide a Github Username',
-                usage: 'https://api.avux.ga/random/info/github?username=<username>'
+        let { username } = req.query;
+        if (!username)
+            return res.status(400).json({
+                result: 'Please Provide a Github Username',
+                usage: `${config.baseurl}/random/info/github?username=<username>`
             });
 
         fetch(
-                'https://api.github.com/users/' + req.query.username
-            )
+            'https://api.github.com/users/' + username
+        )
             .then(res => {
                 return res.json();
             })
             .then(data => {
-                res.statusCode = 200;
-                res.json(data);
+                res.status(200).json(data);
             });
     }
 };

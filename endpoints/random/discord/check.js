@@ -1,36 +1,39 @@
 const request = require("request");
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.token)
-            return res.json({
-                message: 'Please Provide Discord 0Auth Token',
-                usage: 'https://api.avux.ga/random/discord/check?token=<your discord token>'
+        let { token } = req.query;
+
+        if (!token)
+            return res.status(400).json({
+                result: 'Please Provide Discord 0Auth Token',
+                usage: `${config.baseurl}/random/discord/check?token=<your discord token>`
             });
         request({
             method: "GET",
             url: "https://discordapp.com/api/v7/users/@me",
             headers: {
-                authorization: req.query.token
+                authorization: token
             }
         }, (error, response, body) => {
             if (!body) return;
             var json = JSON.parse(body);
             acc = json;
             if (!json.id) {
-                res.json({
+                res.status(200).json({
                     status: 'Invalid',
-                    token: req.query.token
+                    token: token
                 });
             } else if (!json.verified) {
-                res.json({
+                res.status(200).json({
                     status: 'Unverified',
-                    token: req.query.token
+                    token: token
                 });
             } else {
-                res.json({
+                res.status(200).json({
                     status: 'Verified',
-                    token: req.query.token
+                    token: token
                 });
             }
         });

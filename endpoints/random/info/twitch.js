@@ -2,9 +2,9 @@ const rapid = require(`../../../source/rapidapi.json`);
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.username) {
-            res.statusCode = 400;
-            return res.json({
+        let { username } = req.query;
+        if (!username) {
+            return res.status(400).json({
                 error: 'Please Provide Twitch Username.'
             });
         }
@@ -16,7 +16,7 @@ module.exports = {
         const options = {
             method: 'GET',
             url: 'https://twitch-advanced.p.rapidapi.com/getUserDataByUsername/' +
-                req.query.username,
+                username,
             qs: {
                 broadcaster: 'true',
                 emotes: 'true',
@@ -35,16 +35,15 @@ module.exports = {
         };
 
         request(options, function (error, response, body) {
-           if (error) throw new Error(error);
+            if (error) throw new Error(error);
 
             console.log(body);
             if (JSON.parse(body).title == "") {
-                res.statusCode = 400;
-                return res.json({
+                return res.status(400).json({
                     error: "Invalid Username."
                 })
             }
-            return res.json({
+            return res.status(200).json({
                 result: JSON.parse(body)
             });
         });

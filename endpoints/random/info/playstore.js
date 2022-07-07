@@ -1,20 +1,21 @@
 const gplay = require('google-play-scraper');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.app)
-            return res.json({
-                message: 'Please Provide App Name',
-                usage: 'https://api.avux.ga/random/info/playstore?app=<name>'
+        let { app } = req.query;
+        if (!app)
+            return res.status(400).json({
+                result: 'Please Provide App Name',
+                usage: `${config.baseurl}/random/info/playstore?app=<name>`
             });
         gplay
             .search({
-                term: req.query.app,
+                term: app,
                 num: 1
             })
             .then(result => {
-                res.statusCode = 200;
-                res.json({
+                res.status(200).json({
                     result: result[0]
                 });
             });

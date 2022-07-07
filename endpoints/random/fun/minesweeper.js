@@ -88,8 +88,7 @@ module.exports = {
         }
 
         // log(minesweeper(5, 5));
-        res.statusCode = 200;
-        res.send({
+        res.status(200).send({
             output: format(minesweeper(size, bombs))
         })
     }
