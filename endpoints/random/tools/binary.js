@@ -1,28 +1,28 @@
 const fetch = require('node-fetch');
+const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.encode)
+        let { encode, decode } = req.query;
+        if (!encode)
             return fetch(
-                    'https://some-random-api.ml/binary?decode=' + req.query.decode
-                )
+                'https://some-random-api.ml/binary?decode=' + decode
+            )
                 .then(res => {
                     return res.json();
                 })
                 .then(data => {
-                    res.statusCode = 200;
-                    res.json(data);
+                    res.status(200).json(data);
                 });
 
         fetch(
-                'https://some-random-api.ml/binary?encode=' + req.query.encode
-            )
+            'https://some-random-api.ml/binary?encode=' + encode
+        )
             .then(res => {
                 return res.json();
             })
             .then(data => {
-                res.statusCode = 200;
-                res.json(data);
+                res.status(200).json(data);
             });
     }
 };

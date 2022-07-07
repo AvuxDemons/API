@@ -1,5 +1,8 @@
+const config = require('../../../config/config.json');
+
 module.exports = {
     run: async (req, res, next) => {
+        let { number } = req.query;
         function randomString(len, charSet) {
             charSet = charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
             var randomString = '';
@@ -10,17 +13,16 @@ module.exports = {
             return randomString;
         }
 
-        if (!req.query.number)
+        if (!number)
             return res.json({
-                message: 'Please Provide Total Character',
-                usage: 'https://api.avux.ga/random/tools/apikey?number=<your_number>'
+                result: 'Please Provide Total Character',
+                usage: `${config.baseurl}/random/tools/apikey?number=<your_number>`
             });
 
-        const apikey = randomString(req.query.number)
+        const apikey = randomString(number)
 
-        res.statusCode = 200;
-        res.json({
-            message: apikey
+        res.status(200).json({
+            result: apikey
         });
     }
 };

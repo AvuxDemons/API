@@ -35,8 +35,7 @@ module.exports = {
         let time = hh + ":" + mm + ":" + ss + " " + session;
         let date1 = day + ' , ' + tanggal + ' ' + month + ' ' + tahun;
 
-        res.statusCode = 200;
-        res.json({
+        res.status(200).json({
             clock: `${time}`,
             date: `${date1} Coordinated Universal Time (UTC)`
         });

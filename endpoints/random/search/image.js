@@ -3,14 +3,15 @@ const config = require('../../../config/config.json');
 
 module.exports = {
     run: async (req, res, next) => {
-        if (!req.query.search)
+        let { search } = req.query;
+        if (!search)
             return res.json({
-                message: 'Please Provide a Text',
-                usage: 'https://api.avux.ga/random/search/image?search=<your search>'
+                result: 'Please Provide a Text',
+                usage: `${config.baseurl}/random/search/image?search=<your search>`
             });
         const gis = require('g-i-s');
 
-        gis(req.query.search, sendResults);
+        gis(search, sendResults);
         function sendResults(error, results) {
             if (error) {
 
@@ -19,7 +20,7 @@ module.exports = {
                 })
             }
             else {
-                res.json({result: results[Math.floor(Math.random() * results.length)]})
+                res.json({ result: results[Math.floor(Math.random() * results.length)] })
             }
         }
 

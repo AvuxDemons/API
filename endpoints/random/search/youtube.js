@@ -1,10 +1,10 @@
 const ytsearch = require('yt-search');
-
+const config = require('../../../config/config.json');
 module.exports = {
     run: async (req, res, next) => {
         if (!req.url.includes('?'))
             return res.json({
-                message: 'Missing ?search=<video title> ( Optional &choose=<Number> )'
+                result: 'Missing ?search=<video title> ( Optional &choose=<Number> )'
             });
 
         if (!req.url.includes('search='))

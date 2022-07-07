@@ -3,8 +3,7 @@ module.exports = {
         const request = require('request');
 
         if (!req.query.image) {
-            res.statusCode = 400;
-            return res.json({
+            return res.status(200).json({
                 error: 'No Image Link Provided.'
             });
         }
@@ -28,8 +27,7 @@ module.exports = {
 
                     function callback(error, response, body) {
                         if (!error && response.statusCode == 200) {
-                            res.statusCode = 200;
-                            res.json({
+                            res.status(200).json({
                                 imgur: JSON.parse(body).data.link,
                                 file: req.query.image
                             });
@@ -38,14 +36,12 @@ module.exports = {
 
                     request(options, callback);
                 } else {
-                    res.statusCode = 400;
-                    return res.json({
+                    return res.status(400).json({
                         error: 'Invalid Image Link Provided. Link is not an Image.'
                     });
                 }
             } else {
-                res.statusCode = 400;
-                return res.json({
+                return res.status(400).json({
                     error: 'The Specified Image Is Not a Valid Link.'
                 });
             }
