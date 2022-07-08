@@ -96,7 +96,7 @@ search.forEach(end => {
 
 */
 
-const tools = ['apikey', 'avatar', 'base64', 'binary', 'fakemail', 'hastebin', 'imgur', 'ip', 'nameserver', 'password', 'progress', 'shortener', 'time', 'translate', 'username', 'uuid'];
+const tools = ['apikey', 'avatar', 'base64', 'binary', 'fakemail', 'hastebin', 'imgbb', 'imgur', 'ip', 'nameserver', 'password', 'progress', 'shortener', 'time', 'translate', 'username', 'uuid'];
 
 tools.forEach(end => {
     router.get('/tools/' + end, async (req, res) => {
