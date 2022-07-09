@@ -48,7 +48,7 @@ endpoint.forEach(img => {
 const fun = ['8ball', 'ascii', 'chatbot', 'coffee', 'meme', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'];
 
 fun.forEach(end => {
-    router.get('/search/' + end, async (req, res) => {
+    router.get('/fun/' + end, async (req, res) => {
         const endpoint = require(`../endpoints/random/fun/${end}`);
         endpoint.run(req, res)
     });
