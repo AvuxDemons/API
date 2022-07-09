@@ -18,10 +18,10 @@ module.exports = {
                 error: 'Unsupported image type',
                 note: 'Image Endpoint Doesnt Support .webp'
             });
-
-            const response = await fetch(url + avatar);
-            const arrayBuffer = await response.arrayBuffer();
-            const buffer = Buffer.from(arrayBuffer);
-            res.setHeader('content-type', 'image/jpeg').end(buffer);
+        let avatars = avatar.replace('.webp', '.png');
+        const response = await fetch(url + avatars);
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        res.setHeader('content-type', 'image/jpeg').end(buffer);
     }
 };

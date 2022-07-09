@@ -10,8 +10,8 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseurl}/image/horny?avatar=<url_link>`
             });
-
-        const response = await fetch(url + avatar);
+        let avatars = avatar.replace('.webp', '.png');
+        const response = await fetch(url + avatars);
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
         res.setHeader('content-type', 'image/jpeg').end(buffer);

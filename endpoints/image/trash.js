@@ -10,7 +10,8 @@ module.exports = {
                 usage: `${config.baseur}/image/trash?avatar=<avatar link>`
             });
         try {
-            let img = await new DIG.Trash().getImage(avatar);
+            let avatars = avatar.replace('.webp', '.png');
+            let img = await new DIG.Trash().getImage(avatars);
             res.setHeader('content-type', 'image/jpeg').end(img);
         } catch (err) {
             res.status(404).json({

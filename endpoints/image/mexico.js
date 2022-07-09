@@ -10,7 +10,8 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/mexico?avatar=<avatar>`
             });
-        const response = await fetch(url + avatar, {
+            let avatars = avatar.replace('.webp', '.png');
+        const response = await fetch(url + avatars, {
           method: 'GET',
           headers: { 'Authorization': 'avuxapi' }
         });

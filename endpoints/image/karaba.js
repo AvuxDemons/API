@@ -11,7 +11,8 @@ module.exports = {
                 usage: `${config.baseurl}/image/karaba?avatar=<avatar link>`
             });
         try {
-            let img = await new DIG.Karaba().getImage(avatar);
+            let avatars = avatar.replace('.webp', '.png');
+            let img = await new DIG.Karaba().getImage(avatars);
             res.setHeader('content-type', 'image/jpeg').end(img);
         } catch (err) {
             res.status(404).json({

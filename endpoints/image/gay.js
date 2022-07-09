@@ -10,7 +10,8 @@ module.exports = {
                 usage: `${config.baseurl}/image/gay?avatar=<avatar link`
             });
         try {
-            let img = await new DIG.Gay().getImage(avatar);
+            let avatars = avatar.replace('.webp', '.png');
+            let img = await new DIG.Gay().getImage(avatars);
             res.setHeader('content-type', 'image/jpeg').end(img);
         } catch (err) {
             res.status(404).json({

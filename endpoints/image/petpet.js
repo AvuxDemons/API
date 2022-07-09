@@ -10,7 +10,8 @@ module.exports = {
                 usage: `${config.baseur}/image/petpet?avatar=<avatar link`
             });
         try {
-            let img = await petPetGif(avatar);
+            let avatars = avatar.replace('.webp', '.png');
+            let img = await petPetGif(avatars);
             res.setHeader('content-type', 'image/jpeg').end(img);
         } catch (err) {
             res.status(404).json({

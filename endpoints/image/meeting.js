@@ -10,7 +10,7 @@ module.exports = {
         if (!text)
             return res.status(400).json({
                 result: 'Invalid Query Parameter',
-                usage: `${config.baseur}/image/meeting?text=<text>&key=<your key>`
+                usage: `${config.baseur}/image/meeting?text=<text>`
             });
 
         const data = await vacefron.emergencyMeeting(text);
