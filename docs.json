@@ -13,19 +13,19 @@
     "host": "api.avux.xyz",
     "tags": [
         {
-            "name": "anime",
+            "name": "ANIME",
             "description": "Anime Is Our World"
         },
         {
-            "name": "image",
+            "name": "IMAGE",
             "description": "Maybe your bored"
         },
         {
-            "name": "nsfw",
+            "name": "NSFW",
             "description": "18+ Content"
         },
         {
-            "name": "random",
+            "name": "RANDOM",
             "description": "Random Stuff"
         }
     ],
@@ -33,7 +33,7 @@
         "/anime/angry": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -54,7 +54,7 @@
         "/anime/baka": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -75,7 +75,7 @@
         "/anime/banghead": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -96,7 +96,7 @@
         "/anime/bite": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -117,7 +117,7 @@
         "/anime/blowkiss": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -138,7 +138,7 @@
         "/anime/blush": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -159,7 +159,7 @@
         "/anime/bonk": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -180,7 +180,7 @@
         "/anime/boom": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -201,7 +201,7 @@
         "/anime/bored": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -222,7 +222,7 @@
         "/anime/bye": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -243,7 +243,7 @@
         "/anime/cheek": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -264,7 +264,7 @@
         "/anime/claps": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -285,7 +285,7 @@
         "/anime/comfy": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -306,7 +306,7 @@
         "/anime/confuse": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -327,7 +327,7 @@
         "/anime/cry": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -348,7 +348,7 @@
         "/anime/cuddle": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -369,7 +369,7 @@
         "/anime/dab": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -390,7 +390,7 @@
         "/anime/dance": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -411,7 +411,7 @@
         "/anime/deredere": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -432,7 +432,7 @@
         "/anime/disgust": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -453,7 +453,7 @@
         "/anime/drunk": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -474,7 +474,7 @@
         "/anime/eat": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -495,7 +495,7 @@
         "/anime/facepalm": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -516,7 +516,7 @@
         "/anime/fail": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -537,7 +537,7 @@
         "/anime/glare": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -558,7 +558,7 @@
         "/anime/grope": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -579,7 +579,7 @@
         "/anime/handhold": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -600,7 +600,7 @@
         "/anime/happy": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -621,7 +621,7 @@
         "/anime/hi": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -642,7 +642,7 @@
         "/anime/hug": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -663,7 +663,7 @@
         "/anime/kiss": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -684,7 +684,7 @@
         "/anime/laugh": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -705,7 +705,7 @@
         "/anime/lewd": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -726,7 +726,7 @@
         "/anime/lick": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -747,7 +747,7 @@
         "/anime/like": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -768,7 +768,7 @@
         "/anime/morning": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -789,7 +789,7 @@
         "/anime/nope": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -810,7 +810,7 @@
         "/anime/pat": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -831,7 +831,7 @@
         "/anime/peek": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -852,7 +852,7 @@
         "/anime/poke": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -873,7 +873,7 @@
         "/anime/pout": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -894,7 +894,7 @@
         "/anime/punch": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -915,7 +915,7 @@
         "/anime/run": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -936,7 +936,7 @@
         "/anime/sad": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -957,7 +957,7 @@
         "/anime/scared": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -978,7 +978,7 @@
         "/anime/scream": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -999,7 +999,7 @@
         "/anime/shrug": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1020,7 +1020,7 @@
         "/anime/sing": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1041,7 +1041,7 @@
         "/anime/sip": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1062,7 +1062,7 @@
         "/anime/slap": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1083,7 +1083,7 @@
         "/anime/sleep": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1104,7 +1104,7 @@
         "/anime/smile": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1125,7 +1125,7 @@
         "/anime/smug": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1146,7 +1146,7 @@
         "/anime/spank": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1167,7 +1167,7 @@
         "/anime/stare": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1188,7 +1188,7 @@
         "/anime/teehee": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1209,7 +1209,7 @@
         "/anime/thinking": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1230,7 +1230,7 @@
         "/anime/tickle": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1251,7 +1251,7 @@
         "/anime/tired": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1272,7 +1272,7 @@
         "/anime/trap": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1293,7 +1293,7 @@
         "/anime/tsundere": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1314,7 +1314,7 @@
         "/anime/vibe": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1335,7 +1335,7 @@
         "/anime/vomit": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1356,7 +1356,7 @@
         "/anime/wag": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1377,7 +1377,7 @@
         "/anime/wasted": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1398,7 +1398,7 @@
         "/anime/yandere": {
             "get": {
                 "tags": [
-                    "anime"
+                    "ANIME"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
@@ -1417,32 +1417,22 @@
             }
         },
 
-
-
-
-
-        "/search/": {
+        
+        "/image/ads": {
             "get": {
                 "tags": [
-                    "anime"
+                    "IMAGE"
                 ],
                 "summary": "Random Image Of Anime",
                 "produces": [
-                    "application/json",
-                    "application/xml"
+                    "image/jpeg",
+                    "image/png"
                 ],
                 "parameters": [
                     {
-                        "name": "footer",
+                        "name": "avatar",
                         "in": "query",
-                        "description": "The footer in the banner",
-                        "type": "string",
-                        "required": true
-                    },
-                    {
-                        "name": "header",
-                        "in": "query",
-                        "description": "The header in the banner",
+                        "description": "Avatar image url",
                         "type": "string",
                         "required": true
                     }
