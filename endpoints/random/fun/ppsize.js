@@ -15,8 +15,29 @@ module.exports = {
             });
         } else {
             let useSize = Math.floor(Math.random() * size + 1);
+            let comment = '';
+        
+            if (useSize <= 1) {
+                comment = 'Do you have it ?'
+            } else if (useSize <= 3) {
+                comment = 'Too small'
+            } else if (useSize <= 7) {
+                comment = 'Bigger Than Small'
+            } else if (useSize <= 10) {
+                comment = 'Thats Medium Size'
+            } else if (useSize <= 15) {
+                comment = 'The Regular One'
+            } else if (useSize <= 20) {
+                comment = 'Thats Big Enough'
+            } else if (useSize <= 25) {
+                comment = 'Super Duper Mega BIG'
+            } else {
+                comment = 'I cant find one'
+            }
+
             res.status(200).json({
-                size: '8' + '='.repeat(useSize) + 'D'
+                result: '8' + '='.repeat(useSize) + 'D',
+                comment
             });
         }
     }

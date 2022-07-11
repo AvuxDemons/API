@@ -1,5 +1,12 @@
-const reverse = require('reeverse');
 const config = require('../../../config/config.json');
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
 
 module.exports = {
     run: async (req, res, next) => {
@@ -11,9 +18,8 @@ module.exports = {
                 usage: `${config.baseurl}/random/fun/reverse?text=<your text>`
             });
 
-        let rev = reverse(text);
         res.status(200).json({
-            result: rev
+            result: reverseString(text)
         });
     }
 };

@@ -1,5 +1,4 @@
 const fetch = require('node-fetch');
-const replaceString = require('replace-string');
 const config = require('../../../config/config.json');
 
 module.exports = {
@@ -20,13 +19,12 @@ module.exports = {
                         return res.json();
                     })
                     .then(data => {
-                        const satu = replaceString(
-                            JSON.stringify(data),
+                        const satu = JSON.stringify(data).replace(
                             'ah_dey._.weirdo',
                             'd.avux'
                         );
-                        const dua = replaceString(satu, 'ah_dey._.weirdo', 'd.avux');
-                        const tiga = replaceString(dua, 'MeoCop#5555', 'Avux#0000');
+                        const dua = satu.replace('ah_dey._.weirdo', 'd.avux');
+                        const tiga = dua.replace('MeoCop#5555', 'Avux#0000');
                         const hasil = JSON.parse(tiga);
                         res.statusCode = 200;
                         res.json({
@@ -43,13 +41,12 @@ module.exports = {
                         return res.json();
                     })
                     .then(data => {
-                        const satu = replaceString(
-                            JSON.stringify(data),
+                        const satu = JSON.stringify(data).replace(
                             'ah_dey._.weirdo',
                             'd.avux'
                         );
-                        const dua = replaceString(satu, 'ah_dey._.weirdo', 'd.avux');
-                        const tiga = replaceString(dua, 'MeoCop#5555', 'Avux#0000');
+                        const dua = satu.replace('ah_dey._.weirdo', 'd.avux');
+                        const tiga = dua.replace('MeoCop#5555', 'Avux#0000');
                         const hasil = JSON.parse(tiga);
                         res.statusCode = 200;
                         res.json({

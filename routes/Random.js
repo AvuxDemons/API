@@ -50,7 +50,7 @@ endpoint.forEach(img => {
 });
 
 const fun = [
-    '8ball', 'ascii', 'chatbot', 'coffee', 'meme', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'
+    '8ball', 'ascii', 'chatbot', 'coffee', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'
 ];
 
 fun.forEach(end => {
