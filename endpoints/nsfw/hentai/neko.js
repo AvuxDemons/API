@@ -4,8 +4,7 @@ module.exports = {
     run: async (req, res, next) => {
         async function NekoLove() {
             let result = await HMfull.NekoLove.sfw.neko();
-            res.statusCode = 200;
-            res.json({
+            res.status(200).json({
                 result: result.url
             });
         }

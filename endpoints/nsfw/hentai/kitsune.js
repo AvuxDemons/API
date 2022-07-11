@@ -6,8 +6,7 @@ const nekobot = new NekoBot();
 module.exports = {
     run: async (req, res, next) => {
         nekobot.get('hkitsune').then(result => {
-            res.statusCode = 200;
-            res.json({
+            res.status(200).json({
                 result: result.url
             });
         });
