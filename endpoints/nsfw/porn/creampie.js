@@ -5,7 +5,7 @@ module.exports = {
   run: async (req, res, next) => {
 
     const phub = nsfw.getRandomInCategory("creampie", 'jpg');
-    res.json({
+    res.status(200).json({
       result: phub,
     });
 

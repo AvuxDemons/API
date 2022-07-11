@@ -7,8 +7,7 @@ module.exports = {
   run: async (req, res, next) => {
 
       nekobot.get('thigh').then(result => {
-          res.statusCode = 200;
-          res.json({
+        res.status(200).json({
               result: result
           });
       });
