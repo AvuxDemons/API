@@ -1,4 +1,4 @@
-const anime = require('@ytygrunn1ngark456/anime.js');
+const MFA = require('mangadex-full-api');
 const config = require('../../config/config.json');
 
 module.exports = {
@@ -8,13 +8,17 @@ module.exports = {
         if (!search)
             return res.status(400).json({
                 result: 'Please Provide The Title You Wanna Search For!',
-                usage: `${config.baseurl}/anime/search/manga?search=bunny girl senpai`
+                usage: `${config.baseurl}/anime/search/mangadex?search=bunny girl senpai`
             });
 
-        anime.searchManga(search).then(result => {
-            res.status(200).json(
-                result[0]
-            );
-        });
+        MFA.login(config.mangadexusername, config.mangadexpass).then(async () => {
+            const result = await MFA.Manga.search({
+                title: search,
+                limit: Infinity
+            });
+            res.status(200).json({
+                result: result[0]
+            });
+        })
     }
 };
