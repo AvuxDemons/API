@@ -9,15 +9,7 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseurl}/image/invert?avatar=<avatar link>`
             });
-        try {
-            let avatars = avatar.replace('.webp', '.png');
-            let img = await new DIG.Invert().getImage(avatars);
-            res.setHeader('content-type', 'image/jpeg').end(img);
-        } catch (err) {
-            res.status(404).json({
-                error: err.message,
-                note: 'Image Endpoint Doesnt Support .webp'
-            });
-        }
+        let img = await new DIG.Invert().getImage(avatar.replace('.webp', '.png'));
+        res.setHeader('content-type', 'image/jpeg').end(img);
     }
 };

@@ -16,7 +16,9 @@ const router = express.Router();
 
  */
 
-const discord = ['check', 'rankcard', 'user', 'vote', 'welcomer'];
+const discord = [
+    'check', 'rankcard', 'user', 'vote', 'welcomer'
+];
 
 discord.forEach(end => {
     router.get('/search/' + end, async (req, res) => {
@@ -33,7 +35,9 @@ discord.forEach(end => {
 
  */
 
-const endpoint = ['cat', 'dog', 'face', 'insult', 'pickuplines', 'sadcat'];
+const endpoint = [
+    'cat', 'dog', 'face', 'insult', 'pickuplines', 'sadcat'
+];
 
 endpoint.forEach(img => {
     router.get('/fun/' + img, async (req, res) => {
@@ -45,7 +49,9 @@ endpoint.forEach(img => {
     });
 });
 
-const fun = ['8ball', 'ascii', 'chatbot', 'coffee', 'meme', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'];
+const fun = [
+    '8ball', 'ascii', 'chatbot', 'coffee', 'meme', 'minesweeper', 'owoify', 'ppsize', 'reverse', 'simsimi'
+];
 
 fun.forEach(end => {
     router.get('/fun/' + end, async (req, res) => {
@@ -62,7 +68,9 @@ fun.forEach(end => {
 
 */
 
-const info = ['appstore', 'covid', 'github', 'playstore', 'tiktok', 'twitch', 'wikipics'];
+const info = [
+    'appstore', 'covid', 'github', 'playstore', 'tiktok', 'twitch', 'wikipics'
+];
 
 info.forEach(end => {
     router.get('/search/' + end, async (req, res) => {
@@ -79,7 +87,9 @@ info.forEach(end => {
 
  */
 
-const search = ['image', 'lyrics', 'movie', 'youtube', 'youtubev2'];
+const search = [
+    'image', 'lyrics', 'movie', 'youtube', 'youtubev2'
+];
 
 search.forEach(end => {
     router.get('/search/' + end, async (req, res) => {
@@ -96,7 +106,9 @@ search.forEach(end => {
 
 */
 
-const tools = ['apikey', 'avatar', 'base64', 'binary', 'fakemail', 'hastebin', 'imgbb', 'imgur', 'ip', 'nameserver', 'password', 'progress', 'shortener', 'time', 'translate', 'username', 'uuid'];
+const tools = [
+    'apikey', 'avatar', 'base64', 'binary', 'fakemail', 'hastebin', 'imgbb', 'imgur', 'ip', 'nameserver', 'password', 'progress', 'shortener', 'time', 'translate', 'username', 'uuid'
+];
 
 tools.forEach(end => {
     router.get('/tools/' + end, async (req, res) => {

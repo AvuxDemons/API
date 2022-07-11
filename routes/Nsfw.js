@@ -17,7 +17,9 @@ const router = express.Router();
  
 */
 
-const hentai = ['ahegao', 'anal', 'ass', 'blowjob', 'creampie', 'cum', 'ero', 'femdom', 'foot', 'gangbang', 'gif', 'hentai', 'incest', 'kitsune', 'masturbation', 'neko', 'oppai', 'paizuri', 'pantsu', 'public', 'pussy', 'tentacles', 'thigh', 'yuri'];
+const hentai = [
+    'ahegao', 'anal', 'ass', 'blowjob', 'creampie', 'cum', 'ero', 'femdom', 'foot', 'gangbang', 'gif', 'hentai', 'incest', 'kitsune', 'masturbation', 'neko', 'oppai', 'paizuri', 'pantsu', 'public', 'pussy', 'tentacles', 'thigh', 'yuri'
+];
 
 hentai.forEach(end => {
     router.get('/hentai/' + end, async (req, res) => {
@@ -34,13 +36,15 @@ hentai.forEach(end => {
 
  */
 
- const porn = ['anal', 'ass', 'boobs', 'cosplay', 'creampie', 'gif', 'lactation', 'milf', 'oral', 'public', 'pussy', 'rough', 'squirting', 'thigh', 'toys', 'uniform'];
+const porn = [
+    'anal', 'ass', 'boobs', 'cosplay', 'creampie', 'gif', 'lactation', 'milf', 'oral', 'public', 'pussy', 'rough', 'squirting', 'thigh', 'toys', 'uniform'
+];
 
- porn.forEach(end => {
-     router.get('/hentai/' + end, async (req, res) => {
-         const endpoint = require(`../endpoints/nsfw/hentai/${end}`);
-         endpoint.run(req, res)
-     });
- });
+porn.forEach(end => {
+    router.get('/hentai/' + end, async (req, res) => {
+        const endpoint = require(`../endpoints/nsfw/hentai/${end}`);
+        endpoint.run(req, res)
+    });
+});
 
 module.exports = router;

@@ -10,7 +10,7 @@ module.exports = {
         if (!name)
             return res.status(400).json({
                 message: 'Please Provide A Name',
-                usage: `${config.baseurl}/image/ejected?name=<name>&impostor=<true/false(optional)>&color=<black|blue|brown|cyan|darkgreen|lime|orange|pink|purple|red|white|yellow (optional)>`
+                usage: `${config.baseurl}/image/ejected?name=<name>&impostor=(true/false)&color=(black|blue|brown|cyan|darkgreen|lime|orange|pink|purple|red|white|yellow)`
             });
 
         const data = await vacefron.ejected(

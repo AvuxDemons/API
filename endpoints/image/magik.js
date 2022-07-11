@@ -15,7 +15,7 @@ module.exports = {
     const intensitycustom = `&intensity=`;
 
     if (!intensity) {
-      const response = await fetch(url + avatar + intensity, {
+      const response = await fetch(url + avatar.replace('.webp', '.png') + intensity, {
         method: "GET",
         headers: { Authorization: "avuxapi" },
       });
@@ -23,7 +23,7 @@ module.exports = {
       const buffer = Buffer.from(arrayBuffer);
       res.setHeader("content-type", "image/jpeg").end(buffer);
     } else {
-      const response = await fetch(url + avatar + intensitycustom + intensity, {
+      const response = await fetch(url + avatar.replace('.webp', '.png') + intensitycustom + intensity, {
         method: "GET",
         headers: { Authorization: "avuxapi" },
       });

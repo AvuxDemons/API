@@ -10,8 +10,7 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/tweet?username=<username>&displayname=<display_name>&avatar=<avatar_link>&comment=<comment>`
             });
-        let avatars = avatar.replace('.webp', '.png');
-        const response = await fetch(url + username + '&displayname=' + displayname + '&avatar=' + avatars + '&comment=' + comment);
+        const response = await fetch(url + username + '&displayname=' + displayname + '&avatar=' + avatar.replace('.webp', '.png') + '&comment=' + comment);
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
         res.setHeader('content-type', 'image/jpeg').end(buffer);

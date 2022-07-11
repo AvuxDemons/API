@@ -1,5 +1,5 @@
 {
-    "swagger": "2.0",
+    "openapi": "3.0.1",
     "info": {
         "description": "API is a cool api with alot of endpoints which you can use!",
         "version": "1.0.0",
@@ -1417,13 +1417,216 @@
             }
         },
 
-        
+
         "/image/ads": {
             "get": {
                 "tags": [
                     "IMAGE"
                 ],
-                "summary": "Random Image Of Anime",
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/affect": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/batslap": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/beautiful": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/bed": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/blur": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/bobross": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
+                "produces": [
+                    "image/jpeg",
+                    "image/png"
+                ],
+                "parameters": [
+                    {
+                        "name": "avatar",
+                        "in": "query",
+                        "description": "Avatar image url",
+                        "type": "string",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/image/circle": {
+            "get": {
+                "tags": [
+                    "IMAGE"
+                ],
+                "summary": "Image Generation",
                 "produces": [
                     "image/jpeg",
                     "image/png"

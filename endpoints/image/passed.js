@@ -11,8 +11,7 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseur}/image/passed?avatar=<avatar_link>`
             });
-        let avatars = avatar.replace('.webp', '.png');
-        const response = await fetch(url + avatars);
+        const response = await fetch(url + avatar.replace('.webp', '.png'));
         const arrayBuffer = await response.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
         res.setHeader('content-type', 'image/jpeg').end(buffer);

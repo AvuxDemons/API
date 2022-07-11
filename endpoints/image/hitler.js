@@ -9,15 +9,7 @@ module.exports = {
                 result: 'Invalid Query Parameter',
                 usage: `${config.baseurl}/image/hitler?avatar=<avatar link>`
             });
-        try {
-            let avatars = avatar.replace('.webp', '.png');
-            let img = await new DIG.Hitler().getImage(avatars);
+            let img = await new DIG.Hitler().getImage(avatar.replace('.webp', '.png'));
             res.setHeader('content-type', 'image/jpeg').end(img);
-        } catch (err) {
-            res.status(404).json({
-                error: err.message,
-                note: 'Image Endpoint Doesnt Support .webp'
-            });
-        }
     }
 };

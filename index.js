@@ -6,6 +6,7 @@ const chalk = require('chalk');
 const fetch = require('node-fetch');
 const cors = require('cors');
 const config = require('./config/config.json');
+
 /*
   ____  _____ ______     _______ ____  
  / ___|| ____|  _ \ \   / / ____|  _ \ 
@@ -14,9 +15,11 @@ const config = require('./config/config.json');
  |____/|_____|_| \_\ \_/  |_____|_| \_\ cat:server
 
  */
+
 const app = express();
 const port = config.port;
 const health = require('express-ping');
+
 app.set('json spaces', 1);
 app.use(express.static('public'));
 app.use(cors());
@@ -28,48 +31,28 @@ app.get('/', (req, res, next) => {
 
 app.get('/stats', app.use(health.ping('/stats')));
 
+/* ROUTES */
+const animeRoute = require('./routes/Anime');
+const imageRoute = require('./routes/Image');
+const nsfwRoute = require('./routes/Nsfw');
+const randomRoute = require('./routes/Random');
+
+app.use('/anime', animeRoute);
+app.use('/image', imageRoute);
+app.use('/nsfw', nsfwRoute);
+app.use('/random', randomRoute);
+
 /* DOCUMENTATION*/
-const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
 
-const swaggerOptions = {
-    swaggerDefinition: {
-        info: {
-            title: 'API',
-            description: 'API Docs'
-        },
-        servers: [`${config.baseurl}`]
-    },
-    apis: [__dirname + '/routes/*.js']
-
-};
 var options = {
     explorer: true,
     validatorUrl: null
 };
 
-const swaggerDocs = swaggerJsDoc(swaggerOptions);
-
 const swaggerDocument = require('./docs.json');
 
 app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument, options));
-
-/* ROUTES */
-const animeRoute = require('./routes/Anime');
-
-const imageRoute = require('./routes/Image');
-
-const nsfwRoute = require('./routes/Nsfw');
-
-const randomRoute = require('./routes/Random');
-
-app.use('/anime', animeRoute);
-
-app.use('/image', imageRoute);
-
-app.use('/nsfw', nsfwRoute);
-
-app.use('/random', randomRoute);
 
 /* ERROR HANDLING */
 app.use(function (req, res, next) {

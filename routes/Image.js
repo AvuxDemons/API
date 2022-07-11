@@ -9,7 +9,9 @@ const router = express.Router();
  |___|_|  |_/_/   \_\____|_____| cat:image
  */
 
-const images = require('./image.json');
+const images = [
+   'ads', 'affect', 'batslap', 'beautiful', 'bed', 'blur', 'bobross', 'captcha', 'circle', 'communist', 'confusedstonk', 'delete', 'discordblack', 'discordblue', 'doublestonk', 'ejected', 'facepalm', 'gay', 'glitch', 'grab', 'grave', 'greyscale', 'gun', 'hitler', 'horny', 'invert', 'jail', 'karaba', 'kissing', 'like', 'lolice', 'magik', 'meeting', 'mexico', 'notstonk', 'passed', 'petpet', 'podium', 'pornhub', 'poutine', 'pray', 'presetation', 'recaptcha', 'rip', 'sepia', 'ship', 'simp', 'simpcard', 'spanking', 'stonk', 'supreme', 'trash', 'triggered', 'tweet', 'wanted', 'weather', 'wumpus', 'youtube'
+]
 
 images.forEach(end => {
     router.get('/' + end, async (req, res) => {
