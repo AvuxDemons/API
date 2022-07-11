@@ -73,7 +73,7 @@ const info = [
 ];
 
 info.forEach(end => {
-    router.get('/search/' + end, async (req, res) => {
+    router.get('/info/' + end, async (req, res) => {
         const endpoint = require(`../endpoints/random/info/${end}`);
         endpoint.run(req, res)
     });

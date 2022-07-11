@@ -39,7 +39,6 @@
     "request": "^2.88.2",
     "string-progressbar": "^1.0.3",
     "swagger-ui-express": "^4.4.0",
-    "tiktok-scraper": "^1.4.32",
     "vacefron": "^3.4.0",
     "weather-js": "^2.0.0",
     "wikipics-api": "^1.0.2",
