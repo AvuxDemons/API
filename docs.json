@@ -35,7 +35,7 @@
                 "tags": [
                     "anime"
                 ],
-                "summary": "Make the classic minecraft achievment",
+                "summary": "Random Image Of Anime",
                 "produces": [
                     "application/json",
                     "application/xml"
@@ -56,7 +56,1377 @@
                 "tags": [
                     "anime"
                 ],
-                "summary": "Make the classic minecraft achievment",
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/banghead": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/bite": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/blowkiss": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/blush": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/bonk": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/boom": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/bored": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/bye": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/cheek": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/claps": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/comfy": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/confuse": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/cry": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/cuddle": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/dab": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/dance": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/deredere": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/disgust": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/drunk": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/eat": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/facepalm": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/fail": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/glare": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/grope": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/handhold": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/happy": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/hi": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/hug": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/kiss": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/laugh": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/lewd": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/lick": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/like": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/morning": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/nope": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/pat": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/peek": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/poke": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/pout": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/punch": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/run": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/sad": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/scared": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/scream": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/shrug": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/sing": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/sip": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/slap": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/sleep": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/smile": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/smug": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/spank": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/stare": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/teehee": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/thinking": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/tickle": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/tired": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/trap": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/tsundere": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/vibe": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/vomit": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/wag": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/wasted": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+        "/anime/yandere": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "400": {
+                        "description": "Error"
+                    }
+                }
+            }
+        },
+
+
+
+
+
+        "/search/": {
+            "get": {
+                "tags": [
+                    "anime"
+                ],
+                "summary": "Random Image Of Anime",
                 "produces": [
                     "application/json",
                     "application/xml"
